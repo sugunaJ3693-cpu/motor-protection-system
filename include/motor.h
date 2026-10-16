@@ -9,6 +9,6 @@ typedef struct
 } MotorData;
 
 void display_readings(MotorData motor);
-void check_motor_status(MotorData motor);
+const char *get_motor_status(MotorData motor);
 
 #endif
