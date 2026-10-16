@@ -1,10 +1,31 @@
-
 #include <stdio.h>
 #include "motor.h"
 
 int main(void)
 {
-    MotorData motor = {80.0, 30.0, 2.1};
+    MotorData motor;
+
+    printf("Enter motor temperature (C): ");
+    if (scanf("%f", &motor.temperature) != 1 ||
+    motor.temperature < 0)
+    {
+    printf("Invalid temperature input!\n");
+    return 1;
+    }
+
+    printf("Enter motor vibration (units): ");
+    if (scanf("%f", &motor.vibration) != 1)
+    {
+       printf("Invalid vibration input!\n");
+       return 1;
+    }
+
+    printf("Enter motor current (A): ");
+    if (scanf("%f", &motor.current) != 1)
+    {
+       printf("Invalid current input!\n");
+       return 1;
+    }
 
     printf("====================================\n");
     printf(" Smart Industrial Motor Protection\n");
