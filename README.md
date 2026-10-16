@@ -8,7 +8,8 @@ vibration, and current to identify abnormal conditions.
 ## Features
 - Motor sensor reading simulation
 - Normal, warning, and critical status detection
-- Fault codes for high temperature, vibration, and current
+- Threshold-based motor status classification
+- Automated tests for normal, warning, and critical conditions
 - Multiple test cases
 - Test results documentation
 
